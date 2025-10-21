@@ -1,10 +1,12 @@
 <?php 
 /**
- * Plugin Name: Innermedia Wpforms UTM Plugin
+ * Plugin Name: Innermedia WPForms UTM Tracking
  * Plugin URI: https://www.innermedia.co.uk
- * Requires Plugins: wpforms
- * Description: Save utm as cookies for WP forms by adding a custom smart tag to pull in UTM data via a cookie. {utm_data key="UTM"} will get whatever utm parameter. Supported parameters include 'utm_source', 'utm_medium', 'utm_campaign', 'utm_id', 'utm_term', 'utm_content'.
- * Version: 1.0.1
+ * Description: UTM tracking for WPForms
+ * Author: Innermedia
+ * GitHub Plugin URI: https://github.com/Esme-IM/im-wp-utm-tracking
+ * Primary Branch: main
+ * Version: 1.0.2
  */
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
@@ -24,4 +26,5 @@ if ( ! defined( 'IM_WPFUTM_PLUGIN_URL' ) ) {
 if ( ! defined( 'IM_WPFUTM_PLUGIN_FILE' ) ) {
 	define( 'IM_WPFUTM_PLUGIN_FILE', __FILE__ );
 }
+
 include_once('inc/utm_fields.php');
